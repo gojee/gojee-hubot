@@ -15,8 +15,8 @@
 
 module.exports = (robot) ->
 
-  robot.respond /leamsess/gi, (msg) ->
-    msg.respond 'Fetching...'
+  robot.respond /leamsess|seamless/gi, (msg) ->
+    msg.send 'Fetching...'
     options =
       host: 'gojee-seamless.herokuapp.com',
       port: 80,
